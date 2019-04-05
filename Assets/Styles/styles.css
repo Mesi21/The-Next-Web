@@ -198,7 +198,7 @@ body{
     grid-template-rows: auto auto auto;
     column-gap: 10px;
     row-gap: 10px;
-    height: 378px ;
+    height: 500px;
     color: black;
     text-align: center;
     font-size: 20px;
@@ -285,7 +285,54 @@ body{
     width: 100%;
     height: 100%;
 }
-  
+.grid-container-2{
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+      "third third third third"
+      "one two three four";
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 378px ;
+  color: black;
+  text-align: start;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.ar-1{
+  grid-area: third;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.left{
+  width: 65%;
+  float: left;
+  color: #f42;
+}
+.right{
+  display: flex;
+  flex-direction: row;
+  color: #f42;
+  width: 35%;
+  float: right;
+  align-items: center;
+  justify-content: flex-end;
+}
+.right p{
+  font-size: 12px;
+  padding: 0px 8px;
+  font-weight: 400;
+}
+
+#middle{
+  border-right: 1px solid #f42; 
+  border-left: 1px solid #f42;
+}
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
