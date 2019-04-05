@@ -121,6 +121,12 @@ body{
 .second button:hover {
     background-color: purple;
 }
+.second p{
+    font-size: 12px;
+    font-family: Shentox,sans-serif;
+    color: #555;
+}
+
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
   @media screen and (max-width: 600px) {
