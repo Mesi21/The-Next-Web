@@ -74,6 +74,53 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+.first {
+    float: left;
+    width: 60%;
+    padding-top: 10px;
+}
+.first a {
+    text-decoration: none;
+    color: #aaa;
+    font-family: Shentox,sans-serif;
+    font-size: 12px;
+    padding: 15px;
+    
+}
+.first a:hover {
+    color: #555;
+}
+.second {
+    float: right;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid #aaa;
+}
+.second a {
+    text-decoration: none;
+    color: orangered;
+    font-family: Shentox,sans-serif;
+}
+.second img {
+    width: 130px;
+    height: 40px;
+}
+.second button {
+    height: 30px;
+    width: 110px;
+    background-color: #0cc;
+    color: white;
+    border-radius: 4px;
+    border: 0px solid transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+.second button:hover {
+    background-color: purple;
+}
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
   @media screen and (max-width: 600px) {
