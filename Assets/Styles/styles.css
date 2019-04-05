@@ -74,6 +74,9 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+.main-nav-bar{
+  height: 45px;
+}
 .first {
     float: left;
     width: 60%;
@@ -91,6 +94,7 @@ body{
     color: #555;
 }
 .second {
+    display: fixed;
     float: right;
     width: 40%;
     display: flex;
@@ -126,7 +130,62 @@ body{
     font-family: Shentox,sans-serif;
     color: #555;
 }
-
+.grid-container{
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+      "main menu"
+      "main footer";
+  background-color: #fff;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 378px ;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.grid-container h1{
+  font-size: 40px;
+}
+.item-1{
+  grid-area: main;
+  background: -webkit-linear-gradient(top, rgb(161, 11, 11), rgb(46, 37, 37)); /* Chrome10+, Safari5.1+ */ 
+  background: -moz-linear-gradient(top , rgb(161, 11, 11), rgb(46, 37, 37)); /* FF3.6+ */ 
+  background: linear-gradient(top , rgb(161, 11, 11), rgb(46, 37, 37)); /* W3C */ 
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.item-2{
+  grid-area: menu;
+  background: -webkit-linear-gradient(bottom, rgb(219, 98, 17), rgb(241, 239, 239)); /* Chrome10+, Safari5.1+ */ 
+  background: -moz-linear-gradient(bottom , rgb(219, 98, 17), rgb(241, 239, 239)); /* FF3.6+ */ 
+  background: linear-gradient(bottom , rgb(219, 98, 17), rgb(241, 239, 239)); /* W3C */ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+.item-3{
+  grid-area: footer;
+  background: -webkit-linear-gradient(top, rgb(9, 143, 60), rgb(86, 21, 88)); /* Chrome10+, Safari5.1+ */ 
+  background: -moz-linear-gradient(top, rgb(9, 143, 60), rgb(86, 21, 88)); /* FF3.6+ */ 
+  background: linear-gradient(top, rgb(9, 143, 60), rgb(86, 21, 88)); /* W3C */ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  .main-grid-area{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    background-color: aqua;
+  }
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
   @media screen and (max-width: 600px) {
