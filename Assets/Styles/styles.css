@@ -6,11 +6,17 @@
 body{
   font-family: "ARS Maquette", "Helvetica Neue", Arial;
 }
+.nav-bars {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 /* Add a black background color to the top navigation */
 .small-nav-bar {
   background-color: #000;
   height: 35px;
   overflow: hidden;
+  width: 100%;
 }
 /* Style the links inside the navigation bar */
 .small-nav-bar a {
@@ -76,6 +82,9 @@ body{
   }
 .main-nav-bar{
   height: 45px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 .first {
     float: left;
@@ -94,7 +103,6 @@ body{
     color: #555;
 }
 .second {
-    display: fixed;
     float: right;
     width: 40%;
     display: flex;
@@ -129,6 +137,13 @@ body{
     font-size: 12px;
     font-family: Shentox,sans-serif;
     color: #555;
+}
+#hamburger {
+  display: none;
+}
+.empty {
+  height: 80px;
+  width: 100%;
 }
 .grid-container{
   display: grid;
@@ -333,6 +348,64 @@ body{
   border-right: 1px solid #f42; 
   border-left: 1px solid #f42;
 }
+@media screen and (max-width: 600px) {
+  .small-nav-bar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .small-nav-bar a.icon {
+    float: right;
+    display: block;
+}
+}
+@media screen and (max-width: 600px) {
+  .grid-container {
+        display: block;
+  }
+    .second button  { 
+        display: none;
+  }
+    .first {
+        display: none;
+  }
+    .second p {
+        display: none;
+  }
+    .second button  { 
+        display: none;
+  }
+    .second {
+        border-left: 0px;
+  }
+    .second img {
+        display: none;
+  }
+    #hamburger {
+        display: inline;
+  }
+   .second {
+     height: 45px;    
+  }
+  .grid-container {
+      font-size: 13px;
+      font-weight: 400;
+  }
+  .grid-container h1 {
+    font-size: 20px;
+  }
+  .grid-container div{
+    height: 150px;
+    width: 90%;
+    margin: auto;
+  }
+  #mag {
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+  }
+
+
+}
+
+  
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
