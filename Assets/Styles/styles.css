@@ -7,7 +7,7 @@ body{
   font-family: "ARS Maquette", "Helvetica Neue", Arial;
 }
 .nav-bars {
-  position: fixed;
+  
   top: 0;
   width: 100%;
   height: 100%;
@@ -202,7 +202,7 @@ body{
   
   .main-grid-area{
     width: 70%;
-    height: 500px;
+    height: 100%;
     margin: auto;
   }
   .grid-container-1{
@@ -321,7 +321,6 @@ body{
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
-  border: 1px solid black;
 }
 .grid-container-2 div img{
   height: 200px;
@@ -371,7 +370,7 @@ body{
   grid-template-rows: auto auto auto;
   column-gap: 10px;
   row-gap: 10px;
-  height: 500px;
+  height: 1200px;
   color: black;
   text-align: start;
   font-size: 20px;
@@ -521,7 +520,7 @@ body{
   grid-template-rows: auto auto auto;
   column-gap: 10px;
   row-gap: 10px;
-  height: 500px;
+  height: 100%;
   color: black;
   text-align: center;
   font-size: 20px;
@@ -531,10 +530,7 @@ body{
 .item-5 h1 {
   padding-right: 6px;
 }
-.grid-container-1 img {
-  width: 100%;
-  height: 100%;
-}
+
 .grid-container-4 img {
   width: 100%;
   height: 100%;
@@ -612,7 +608,57 @@ body{
   justify-content: center;
   flex-direction: column;
 }
-
+.footer{
+  width: 100%;
+  background-color: #555;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer-1{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.media i{
+  padding: 0px 15px;
+  color: #fff;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.list p{
+  padding: 0px 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+.list p:hover{
+  padding: 0px 15px;
+  font-weight: 700;
+}
+.copyright{
+  display: flex;
+  background-color: #000;
+  color: #aaa;
+  height: 70px;
+  text-align: center;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 600px) {
   .small-nav-bar a:not(:first-child), .dropdown .dropbtn {
@@ -656,6 +702,7 @@ body{
   .grid-container {
       font-size: 13px;
       font-weight: 400;
+      height: 100%
   }
   .grid-container h1 {
     font-size: 20px;
@@ -671,6 +718,7 @@ body{
   }
   .grid-container-1{
     width: 90%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -718,45 +766,9 @@ body{
     flex-direction: row;
     height: 50px;  
   }
-
+  .grid-container-2{
+    height: 100%;
+    font-size: 13px;
+    display: block;
+  }
 }
-
-  
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-   The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-
-
-     Hide the link that should open and close the topnav on small screens 
-  .dropbtn .icon {
-    display: none;
-  }
-  }*/
