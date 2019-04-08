@@ -7,7 +7,7 @@ body{
   font-family: "ARS Maquette", "Helvetica Neue", Arial;
 }
 .nav-bars {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -318,9 +318,14 @@ body{
   font-weight: bold;
   padding-top: 20px;
 }
-.ar-1{
+.grid-container-2 div img{
+  height: 200px;
+  width: 100%;
+}
+.aro-1{
   grid-area: third;
   background-color: white;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -348,6 +353,110 @@ body{
   border-right: 1px solid #f42; 
   border-left: 1px solid #f42;
 }
+.grid-container-3{
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+      "one-1 two-1 three-1"
+      "four-1 five-1 six-1"
+      "seven-1 eight-1 nine-1"
+      ;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 500px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.grid-container-3 img{
+  width: 400px;
+  height: 100%;
+}
+.aro-1{ 
+  grid-area: third; 
+  background-color: white; 
+  display: flex; 
+  align-items: center; 
+} 
+.ar-1 {
+  grid-area: one-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-2 {
+  grid-area: two-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-3 {
+  grid-area: three-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-4 {
+  grid-area: four-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-5 {
+  grid-area: five-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-6 {
+  grid-area: six-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-7 {
+  grid-area: seven-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-8 {
+  grid-area: eight-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-9 {
+  grid-area: nine-1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 @media screen and (max-width: 600px) {
   .small-nav-bar a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -355,11 +464,13 @@ body{
   .small-nav-bar a.icon {
     float: right;
     display: block;
-}
-}
-@media screen and (max-width: 600px) {
+  }
+  .main-grid-area{
+    width: 90%;
+    margin: auto;
+  }
   .grid-container {
-        display: block;
+         display: block;
   }
     .second button  { 
         display: none;
@@ -401,7 +512,55 @@ body{
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
   }
-
+  .grid-container-1{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .grid-container-1 img{
+    width: 30%;
+  }
+  .grid-container-1 div{
+    margin-top: 10px;
+  }
+  .grid-container-1 p{
+    padding-left: 5px;
+    text-align: left; 
+  }
+  .area-1{
+    flex-direction: row;
+    height: 50px;
+  }
+  .area-2{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-3{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-4{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-5{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-6{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-7{
+    flex-direction: row;
+    height: 50px;  
+  }
+  .area-8{
+    flex-direction: row;
+    height: 50px;  
+  }
 
 }
 
