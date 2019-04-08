@@ -7,16 +7,19 @@ body{
   font-family: "ARS Maquette", "Helvetica Neue", Arial;
 }
 .nav-bars {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
+  height: 100%;
 }
 /* Add a black background color to the top navigation */
 .small-nav-bar {
   background-color: #000;
   height: 35px;
+  top: 0;
   overflow: hidden;
   width: 100%;
+  position: fixed;
 }
 /* Style the links inside the navigation bar */
 .small-nav-bar a {
@@ -81,10 +84,11 @@ body{
     display: block;
   }
 .main-nav-bar{
-  height: 45px;
   position: fixed;
+  height: 45px;
   background-color: white;
   width: 100%;
+  margin-top: 35px;
 }
 .first {
     float: left;
@@ -142,8 +146,8 @@ body{
   display: none;
 }
 .empty {
+  clear: both;
   height: 80px;
-  width: 100%;
 }
 .grid-container{
   display: grid;
@@ -317,6 +321,7 @@ body{
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
+  border: 1px solid black;
 }
 .grid-container-2 div img{
   height: 200px;
@@ -368,14 +373,27 @@ body{
   row-gap: 10px;
   height: 500px;
   color: black;
-  text-align: center;
+  text-align: start;
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
 }
 .grid-container-3 img{
-  width: 400px;
-  height: 100%;
+  width: 100%;
+  height: 200px;
+}
+.grid-container-3  div h1 {
+  color: #f42;
+}
+.grid-container-3  div i {
+  color: #f42;
+  padding-left: 4px;
+}
+.grid-container-3 div {
+  margin-bottom: 10px;
+}
+.grid-container-3 div p {
+  margin-top: 10px;
 }
 .aro-1{ 
   grid-area: third; 
@@ -387,68 +405,207 @@ body{
   grid-area: one-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-1 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-2 {
   grid-area: two-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-2 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-3 {
   grid-area: three-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-3 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-4 {
   grid-area: four-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-4 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-5 {
   grid-area: five-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-5 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-6 {
   grid-area: six-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.ar-6 div {
+  display: flex;
+  flex-direction: row;
 }
 .ar-7 {
   grid-area: seven-1;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
+.ar-7 div {
+  display: flex;
+  flex-direction: row;
+}
 .ar-8 {
   grid-area: eight-1;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-8 div {
+  display: flex;
+  flex-direction: row;
+}
+.ar-9 {
+  grid-area: nine-1;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.ar-9 div {
+  display: flex;
+  flex-direction: row;
+}
+.grid-container-4{
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+      "fourth fourth fourth fourth"
+      "one-2 two-2 three-2 four-2"
+      "five-2 six-2 seven-2 eight-2";
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 500px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.item-5 h1 {
+  padding-right: 6px;
+}
+.grid-container-1 img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container-4 img {
+  width: 100%;
+  height: 100%;
+}
+.item-5 {
+  grid-area: fourth;
+  background-color: white;
+  color: #f42;
+  text-align: start;
+  display: flex;
+  align-items: flex-end;
+
+}
+.a-1 {
+  grid-area: one-2;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.ar-9 {
-  grid-area: nine-1;
+.a-2 {
+  grid-area: two-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-3 {
+  grid-area: three-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-4 {
+  grid-area: four-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-5 {
+  grid-area: five-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-6 {
+  grid-area: six-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-7 {
+  grid-area: seven-2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.a-8 {
+  grid-area: eight-2;
   background-color: white;
   display: flex;
   align-items: center;
