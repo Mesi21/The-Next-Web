@@ -660,7 +660,7 @@ body{
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .small-nav-bar a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -715,6 +715,11 @@ body{
   #mag {
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
+    padding: 15px 5px 0px 5px;
+    height: 100%;
+  }
+  .main-nav-bar {
+    border-bottom: 1px solid #aaa;
   }
   .grid-container-1{
     width: 90%;
@@ -770,5 +775,60 @@ body{
     height: 100%;
     font-size: 13px;
     display: block;
+    width: 100%;
+  }
+  .grid-container-2 div img {
+    height: 150px;
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .grid-container-2 div{
+    display: block;
+    height: 100%;
+  }
+  .grid-container-2 .aro-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 27px;
+  }
+  #middle {
+    border: 0px;
+  }
+  .grid-container-2 .left {
+    font-size: 18px;
+    width: 100%;
+  }
+  .grid-container-3 {
+    display: block;
+    height: 100%;
+  }
+  .grid-container-4 {
+    display: block;
+    height: 100%;
+  }
+  .grid-container-4 div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .grid-container-4 div p{
+    text-align: start;
+    font-size: 16px;
+    
+  }
+  .grid-container-4 div img {
+    margin: 0px 10px 10px 0px;
+  }
+  .media i {
+    padding: 0px 8px;
+  }
+  .list p {
+    padding: 0px 8px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
